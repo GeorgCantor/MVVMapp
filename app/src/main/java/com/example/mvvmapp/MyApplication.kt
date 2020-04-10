@@ -1,6 +1,7 @@
 package com.example.mvvmapp
 
 import android.app.Application
+import com.example.mvvmapp.di.AppInjector
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
