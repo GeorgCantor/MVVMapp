@@ -24,7 +24,7 @@ class ViewModelFactory @Inject constructor(
         }
 
         if (creator == null) {
-            throw IllegalArgumentException("unknown model class $modelClass")
+            throw IllegalArgumentException("Unknown class: $modelClass")
         }
 
         try {

@@ -1,4 +1,4 @@
-package com.example.mvvmapp.model
+package com.example.mvvmapp.model.remote
 
 import com.example.mvvmapp.model.data.NewsResponse
 import com.example.mvvmapp.BuildConfig
