@@ -1,7 +1,8 @@
-package com.example.mvvmapp.di
+package com.example.mvvmapp.di.module
 
 import androidx.lifecycle.ViewModel
 import com.example.mvvmapp.di.base.ViewModelKey
+import com.example.mvvmapp.view.fragment.MainViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -11,6 +12,6 @@ interface ViewModelModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(ArticleViewModel::class)
-    fun bindArticleViewModel(newsArticleViewModel: ArticleViewModel): ViewModel
+    @ViewModelKey(MainViewModel::class)
+    fun bindMainViewModel(mainViewModel: MainViewModel): ViewModel
 }

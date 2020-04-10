@@ -1,4 +1,4 @@
-package com.example.mvvmapp.di
+package com.example.mvvmapp.di.module
 
 import com.example.mvvmapp.model.remote.ApiService
 import dagger.Module

@@ -1,4 +1,4 @@
-package com.example.mvvmapp.di
+package com.example.mvvmapp.di.module
 
 import androidx.lifecycle.ViewModelProvider
 import com.example.mvvmapp.di.base.ViewModelFactory
