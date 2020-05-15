@@ -1,4 +1,4 @@
-package com.example.mvvmapp.view
+package com.example.mvvmapp.view.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
