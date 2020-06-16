@@ -1,5 +1,8 @@
 package com.example.mvvmapp.di
 
+import com.example.mvvmapp.repository.Repository
+import com.example.mvvmapp.view.home.HomeViewModel
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val apiModule = module {
@@ -7,11 +10,11 @@ val apiModule = module {
 }
 
 val repositoryModule = module {
-//    single { ApiRepository(get(), get()) }
+    single { Repository() }
 }
 
 val viewModelModule = module(override = true) {
-//    viewModel {
-//        AuthPhoneViewModel(androidApplication(), get())
-//    }
+    viewModel {
+        HomeViewModel(get())
+    }
 }

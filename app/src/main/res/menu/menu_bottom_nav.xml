@@ -21,4 +21,9 @@
         android:icon="@drawable/selector_favorite"
         android:title="@string/favorite" />
 
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/selector_profile"
+        android:title="@string/profile" />
+
 </menu>
