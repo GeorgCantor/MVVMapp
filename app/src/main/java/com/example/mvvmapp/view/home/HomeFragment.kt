@@ -1,17 +1,17 @@
-package com.example.mvvmapp.view.main
+package com.example.mvvmapp.view.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.mvvmapp.R.layout.fragment_main
+import com.example.mvvmapp.R.layout.fragment_home
 
-class MainFragment : Fragment() {
+class HomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(fragment_main, container, false)
+    ): View? = inflater.inflate(fragment_home, container, false)
 }
