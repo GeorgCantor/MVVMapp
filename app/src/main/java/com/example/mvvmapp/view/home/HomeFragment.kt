@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.example.mvvmapp.R
 import com.example.mvvmapp.R.layout.fragment_home
+import com.example.mvvmapp.view.home.adapter.HomeAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 import org.koin.core.parameter.parametersOf
@@ -45,7 +46,8 @@ class HomeFragment : Fragment(), Toolbar.OnMenuItemClickListener {
 
         viewModel.posts.observe(viewLifecycleOwner, Observer {
             home_recycler.setHasFixedSize(true)
-            home_recycler.adapter = HomeAdapter(it)
+            home_recycler.adapter =
+                HomeAdapter(it)
         })
     }
 
