@@ -5,7 +5,7 @@
     <item
         android:id="@+id/nav_direct"
         android:icon="@drawable/ic_direct"
-        android:title="@string/direct"
+        android:title="@string/app_name"
         app:showAsAction="always" />
 
 </menu>
