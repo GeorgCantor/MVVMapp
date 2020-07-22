@@ -1,6 +1,10 @@
 package com.example.mvvmapp.di
 
+import com.example.mvvmapp.db.PokemonDao
+import com.example.mvvmapp.db.PokemonInfoDao
 import com.example.mvvmapp.network.ApiClient
+import com.example.mvvmapp.repository.DetailRepository
+import com.example.mvvmapp.repository.MainRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

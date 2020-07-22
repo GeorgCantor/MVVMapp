@@ -8,7 +8,7 @@ import com.example.mvvmapp.db.converters.InfoTypeResponseConverter
 import com.example.mvvmapp.model.Pokemon
 import com.example.mvvmapp.model.PokemonInfo
 
-@Database(entities = [Pokemon::class, PokemonInfo::class], version = 1, exportSchema = true)
+@Database(entities = [Pokemon::class, PokemonInfo::class], version = 1, exportSchema = false)
 @TypeConverters(value = [InfoTypeConverter::class, InfoTypeResponseConverter::class])
 abstract class AppDatabase : RoomDatabase() {
 

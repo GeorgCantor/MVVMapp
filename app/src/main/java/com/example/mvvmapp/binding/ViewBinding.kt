@@ -14,6 +14,9 @@ import androidx.databinding.BindingAdapter
 import androidx.lifecycle.LiveData
 import com.bumptech.glide.Glide
 import com.example.mvvmapp.extensions.gone
+import com.example.mvvmapp.model.PokemonInfo
+import com.example.mvvmapp.utils.PokemonTypeUtils
+import com.example.mvvmapp.utils.SpacesItemDecoration
 import com.github.florent37.glidepalette.BitmapPalette.Profile.MUTED_LIGHT
 import com.github.florent37.glidepalette.GlidePalette
 import com.google.android.material.card.MaterialCardView
