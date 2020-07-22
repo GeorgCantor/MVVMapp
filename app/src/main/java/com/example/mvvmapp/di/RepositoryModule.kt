@@ -1,5 +1,6 @@
 package com.example.mvvmapp.di
 
+import com.example.mvvmapp.network.ApiClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -13,14 +14,14 @@ object RepositoryModule {
     @Provides
     @ActivityRetainedScoped
     fun provideMainRepository(
-        pokedexClient: PokedexClient,
+        client: ApiClient,
         pokemonDao: PokemonDao
-    ) = MainRepository(pokedexClient, pokemonDao)
+    ) = MainRepository(client, pokemonDao)
 
     @Provides
     @ActivityRetainedScoped
     fun provideDetailRepository(
-        pokedexClient: PokedexClient,
+        client: ApiClient,
         pokemonInfoDao: PokemonInfoDao
-    ) = DetailRepository(pokedexClient, pokemonInfoDao)
+    ) = DetailRepository(client, pokemonInfoDao)
 }

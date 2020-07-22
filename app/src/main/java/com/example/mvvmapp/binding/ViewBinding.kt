@@ -13,6 +13,7 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.databinding.BindingAdapter
 import androidx.lifecycle.LiveData
 import com.bumptech.glide.Glide
+import com.example.mvvmapp.extensions.gone
 import com.github.florent37.glidepalette.BitmapPalette.Profile.MUTED_LIGHT
 import com.github.florent37.glidepalette.GlidePalette
 import com.google.android.material.card.MaterialCardView
@@ -79,9 +80,7 @@ fun bindLoadImagePaletteView(view: AppCompatImageView, url: String, paletteView:
 }
 
 @BindingAdapter("gone")
-fun bindGone(view: View, shouldBeGone: Boolean) {
-    view.gone(shouldBeGone)
-}
+fun bindGone(view: View, shouldBeGone: Boolean) = view.gone(shouldBeGone)
 
 @BindingAdapter("onBackPressed")
 fun bindOnBackPressed(view: View, finish: Boolean) {

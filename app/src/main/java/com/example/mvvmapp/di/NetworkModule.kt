@@ -1,14 +1,17 @@
 package com.example.mvvmapp.di
 
+import com.example.mvvmapp.network.ApiClient
+import com.example.mvvmapp.network.ApiService
+import com.example.mvvmapp.network.HttpRequestInterceptor
 import com.skydoves.sandwich.coroutines.CoroutinesResponseCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import javax.inject.Singleton
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -31,9 +34,9 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun providePokedexService(retrofit: Retrofit) = retrofit.create(PokedexService::class.java)
+    fun provideApiService(retrofit: Retrofit) = retrofit.create(ApiService::class.java)
 
     @Provides
     @Singleton
-    fun providePokedexClient(pokedexService: PokedexService) = PokedexClient(pokedexService)
+    fun provideApiClient(service: ApiService) = ApiClient(service)
 }
